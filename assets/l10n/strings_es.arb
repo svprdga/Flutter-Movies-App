@@ -1,0 +1,7 @@
+{
+  "appName": "App de Películas",
+  "toggleLightDart": "Intercambiar modo claro/oscuro",
+  "upcomingMovies": "Próximas películas",
+  "refresh": "Refrescar",
+  "getNewData": "Refrescar para obtener datos nuevos"
+}

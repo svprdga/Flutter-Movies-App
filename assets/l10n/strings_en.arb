@@ -1,0 +1,7 @@
+{
+  "appName": "Movies App",
+  "toggleLightDart": "Toggle light/dark mode",
+  "upcomingMovies": "Upcoming movies",
+  "refresh": "Refresh",
+  "getNewData": "Refresh to fetch new data"
+}

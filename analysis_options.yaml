@@ -1,0 +1,7 @@
+include: package:lint/analysis_options.yaml
+
+analyzer:
+  exclude: [ lib/data/network/entity/*.g.dart , lib/util/l10n/** ]
+
+linter:
+  rules:
