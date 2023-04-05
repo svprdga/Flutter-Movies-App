@@ -15,10 +15,8 @@ class PreferencesRepository {
 
     if (rawValue == ThemeMode.light.index) {
       return ThemeMode.light;
-    } else if (rawValue == ThemeMode.dark.index) {
-      return ThemeMode.dark;
     } else {
-      return ThemeMode.system;
+      return ThemeMode.dark;
     }
   }
 }

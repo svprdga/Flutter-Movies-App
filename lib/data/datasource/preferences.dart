@@ -3,7 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class Preferences {
   static const keyThemeMode = 'theme_mode';
-  final defThemeMode = ThemeMode.system.index;
+  final defThemeMode = ThemeMode.light.index;
 
   final SharedPreferences prefs;
 
