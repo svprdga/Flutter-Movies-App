@@ -118,5 +118,3 @@ assets/config/config.json
 # Flutter shader files
 *.sksl.json
 
-# Generated translations
-lib/util/l10n
