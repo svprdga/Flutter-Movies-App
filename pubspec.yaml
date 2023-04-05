@@ -1,5 +1,5 @@
 name: flutter_movies_app
-description: A new Flutter project.
+description: A sample Flutter app that shows a list of upcoming movies.
 publish_to: 'none'
 
 version: 1.0.0+1
