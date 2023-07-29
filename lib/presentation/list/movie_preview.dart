@@ -8,8 +8,12 @@ class MoviePreview extends StatelessWidget {
   static const _size = 100.0;
 
   final Movie movie;
+  final Key? imageKey;
 
-  const MoviePreview({required this.movie});
+  const MoviePreview({
+    required this.movie,
+    this.imageKey,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -27,6 +31,7 @@ class MoviePreview extends StatelessWidget {
             // Movie image
             if (movie.imageUrl != null)
               Container(
+                key: imageKey,
                 padding: const EdgeInsets.only(
                   left: 8.0,
                   top: 8.0,
