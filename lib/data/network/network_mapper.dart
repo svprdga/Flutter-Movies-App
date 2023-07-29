@@ -32,7 +32,7 @@ class NetworkMapper {
       try {
         movies.add(toMovie(entity));
       } catch (e) {
-        log.w('Could not map entity ${entity.id}', e);
+        log.w('Could not map entity ${entity.id}', error: e);
       }
     }
 

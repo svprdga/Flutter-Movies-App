@@ -40,7 +40,7 @@ Future<InitialData> _createData() async {
   // Util
   final log = Logger(
     printer: PrettyPrinter(),
-    level: kDebugMode ? Level.verbose : Level.nothing,
+    level: kDebugMode ? Level.trace : Level.off,
   );
 
   // Load project configuration
@@ -96,7 +96,7 @@ Future<Config> _loadConfig(Logger log) async {
       'Error while loading project configuration, please make sure '
       'that the file located at /assets/config/config.json '
       'exists and that it contains the correct configuration.',
-      e,
+      error: e,
     );
     rethrow;
   }

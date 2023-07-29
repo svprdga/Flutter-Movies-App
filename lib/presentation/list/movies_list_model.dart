@@ -12,7 +12,7 @@ class MoviesListModel {
     try {
       return await moviesRepo.getUpcomingMovies(limit: 10, page: page);
     } catch (e) {
-      log.e('Error when fetching page $page', e);
+      log.e('Error when fetching page $page', error: e);
       rethrow;
     }
   }
@@ -21,7 +21,7 @@ class MoviesListModel {
     try {
       await moviesRepo.deleteAll();
     } catch (e) {
-      log.e('Error when deleting movies', e);
+      log.e('Error when deleting movies', error: e);
       rethrow;
     }
   }
@@ -30,7 +30,7 @@ class MoviesListModel {
     try {
       return await moviesRepo.checkNewData();
     } catch (e) {
-      log.e('Error when checking for new data', e);
+      log.e('Error when checking for new data', error: e);
       return true;
     }
   }

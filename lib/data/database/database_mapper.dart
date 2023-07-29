@@ -28,7 +28,7 @@ class DatabaseMapper {
       try {
         movies.add(toMovie(entity));
       } catch (e) {
-        log.w('Could not map entity ${entity.movieId}', e);
+        log.w('Could not map entity ${entity.movieId}', error: e);
       }
     }
 
@@ -56,7 +56,7 @@ class DatabaseMapper {
       try {
         entities.add(toMovieDbEntity(movie));
       } catch (e) {
-        log.w('Could not map movie ${movie.id}', e);
+        log.w('Could not map movie ${movie.id}', error: e);
       }
     }
 
